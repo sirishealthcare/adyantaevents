@@ -1,0 +1,1381 @@
+<?php  $base_url = "https://www.adyantaevents.com/" ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--====== Required meta tags ======-->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="description" content="Adyanta Events is Hyderabad's premier event planning company specializing in weddings, corporate events & celebrations. Award-winning planners creating unforgettable experiences since 2015." />
+  <meta name="keywords" content="event planners Hyderabad, wedding planners Hyderabad, corporate event management, best event management company, Hyderabad event organizers" />
+  <meta name="author" content="Adyanta Events" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta name="robots" content="index, follow" />
+
+  <!--====== Title ======-->
+  <title>Best Event Planners in Hyderabad | Wedding & Corporate Event Management</title>
+
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="<?php echo $base_url; ?>assets/images/fav.png" type="image/png" />
+
+  <!--====== Bootstrap css ======-->
+  <link rel="stylesheet" href="<?php echo $base_url; ?>assets/css/bootstrap.min.css" />
+
+  <!--====== Line Icons css ======-->
+  <link rel="stylesheet" href="<?php echo $base_url; ?>assets/css/lineicons.css" />
+
+  <!--====== Tiny Slider css ======-->
+  <link rel="stylesheet" href="<?php echo $base_url; ?>assets/css/tiny-slider.css" />
+
+  <!--====== gLightBox css ======-->
+  <link rel="stylesheet" href="<?php echo $base_url; ?>assets/css/glightbox.min.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="<?php echo $base_url; ?>style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="canonical" href="<?php echo $base_url; ?>" />
+ 
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" >
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="<?php echo $base_url; ?>main.css" />
+  
+
+  <!-- Schema.org markup for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventPlanningBusiness",
+    "name": "Adyanta Events",
+    "image": "<?php echo $base_url; ?>assets/images/adyanta.png",
+    "@id": "",
+    "url": "<?php echo $base_url; ?>",
+    "telephone": "+919100208880",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "328, Ravindra Society, Road No. 07, Kakatiya Hills",
+      "addressLocality": "Madhapur",
+      "addressRegion": "Telangana",
+      "postalCode": "500081",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "17.4489",
+      "longitude": "78.3906"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "21:00"
+    },
+    "sameAs": [
+      "https://www.facebook.com/Adyanta-Events-By-Inaara-112548038429805",
+      "https://www.instagram.com/adyanta_events/"
+    ]
+  }
+  </script>
+  
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "<?php echo $base_url; ?>"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Wedding Planners",
+      "item": "<?php echo $base_url; ?>#weddings"
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Corporate Events",
+      "item": "<?php echo $base_url; ?>#corporate"
+    }]
+  }
+  </script>
+  <style>
+     .about-area {
+  position: relative;
+  padding: 60px 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.about-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('assets/images/Adyanta.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2; /* 👈 change this value for more/less opacity */
+  z-index: -1;
+}
+
+ /* Modern CSS Enhancements */
+  .bg-gradient-light {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  }
+  
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  }
+  
+  .shadow-xs {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .rounded-4 {
+    border-radius: 12px !important;
+  }
+  
+  .transition-all {
+    transition: all 0.3s ease;
+  }
+  
+  .bg-primary-soft {
+    background-color: rgba(13, 110, 253, 0.1);
+  }
+  </style>
+</head>
+
+<body>
+
+  <!--====== NAVBAR NINE PART START ======-->
+<section class="navbar-area navbar-nine">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <nav class="navbar navbar-expand-lg">
+          <div class="row align-items-center">
+            <div class="col-md-2 col-6">
+              <a class="navbar-brand" href="/">
+                <img src="<?php echo $base_url; ?>assets/images/adyanta.png" class="logo-img" alt="Logo" />
+                <div class="logo-pulse"></div>
+              </a>
+            </div>
+            <div class="col-md-10 col-6">
+              <button class="navbar-toggler magnetic" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
+                aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="page-scroll active" href="#home">
+                      <span class="nav-link-content">Home</span>
+                      <span class="nav-link-underline"></span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#about">
+                      <span class="nav-link-content">About Us</span>
+                      <span class="nav-link-underline"></span>
+                    </a>
+                  </li>
+                  <!--<li class="nav-item">-->
+                  <!--  <a class="page-scroll" href="#process">-->
+                  <!--    <span class="nav-link-content">Our Process</span>-->
+                  <!--    <span class="nav-link-underline"></span>-->
+                  <!--  </a>-->
+                  <!--</li>-->
+                  <!--<li class="nav-item">-->
+                  <!--  <a class="page-scroll" href="#offer">-->
+                  <!--    <span class="nav-link-content">What we offer</span>-->
+                  <!--    <span class="nav-link-underline"></span>-->
+                  <!--  </a>-->
+                  <!--</li>-->
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#gallery">
+                      <span class="nav-link-content">Gallery</span>
+                      <span class="nav-link-underline"></span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#range">
+                      <span class="nav-link-content">Our Services</span>
+                      <span class="nav-link-underline"></span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#contact">
+                      <span class="nav-link-content">Contact</span>
+                      <span class="nav-link-underline"></span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="nav-highlight"></div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!--====== NAVBAR NINE PART ENDS ======-->
+
+  <!--====== SIDEBAR PART START ======-->
+
+ <!-- Modern Sidebar Navigation with Scroll-aware Logo -->
+<aside id="sidebar" class="sidebar position-fixed top-0 start-0 h-100 vh-100 bg-white shadow-lg z-index-1050 overflow-hidden" style="width: 320px; transform: translateX(-100%); transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);">
+  <!-- Sidebar Content -->
+  <div class="sidebar-content h-100 d-flex flex-column">
+    <!-- Close Button -->
+    <div class="sidebar-close text-end p-4">
+      <button class="btn-close btn-close-black" aria-label="Close sidebar" id="sidebarClose"></button>
+    </div>
+
+    <!-- Logo with Scroll Effect -->
+    <div class="sidebar-logo text-center px-4 mb-5" data-aos="fade-down" data-aos-delay="100" id="sidebarLogo">
+      <a href="index.html" class="d-inline-block">
+        <img src="<?php echo $base_url; ?>assets/images/adyanta.png" alt="Adyanta Events" class="img-fluid sidebar-logo-img" style="transition: all 0.3s ease;">
+      </a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="sidebar-menu flex-grow-1 px-4" data-aos="fade-up" data-aos-delay="150">
+      <ul class="list-unstyled">
+        <!-- Menu items same as before -->
+        <li class="mb-2">
+          <a href="#home" class="nav-link d-block py-3 px-4 rounded-4 text-decoration-none position-relative">
+            <span class="nav-icon me-3"><i class="lni lni-home"></i></span>
+            <span class="nav-text">Home</span>
+            <span class="nav-highlight position-absolute top-0 start-0 w-100 h-100 bg-light rounded-4 opacity-0"></span>
+          </a>
+        </li>
+        <!-- Other menu items -->
+      </ul>
+    </nav>
+
+    <!-- Social Links -->
+    <div class="sidebar-social text-center p-4 mt-auto" data-aos="fade-up" data-aos-delay="200">
+      <!-- Social icons same as before -->
+    </div>
+  </div>
+</aside>
+
+
+  <div class="overlay-left"></div>
+
+  <!--====== MODERN BANNER ======-->
+<div id="home" class="carousel-modern">
+  <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+    <div class="carousel-indicators">
+      <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> 
+      <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> 
+      <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+      <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselExampleIndicators" type="button"></button>
+      <button aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="#carouselExampleIndicators" type="button"></button>
+      <button aria-label="Slide 6" data-bs-slide-to="5" data-bs-target="#carouselExampleIndicators" type="button"></button>
+      <button aria-label="Slide 7" data-bs-slide-to="6" data-bs-target="#carouselExampleIndicators" type="button"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <picture>
+          <source media="(max-width:480px)" srcset="<?php echo $base_url; ?>assets/images/slider/mblslid10.jpg">
+          <img alt="Wedding Planning" class="d-block img-responsive" src="<?php echo $base_url; ?>assets/images/slider/slider10.jpg">
+        </picture>
+        <div class="carousel-caption">
+          <h5 class="animate__animated animate__fadeInUp">A Perfect Blend<br>For Your Dream Wedding</h5>
+          <p class="animate__animated animate__fadeInUp">Creating unforgettable moments with bespoke wedding experiences</p>
+          <!--<a href="https://api.whatsapp.com/send/?phone=919100208880&text&type=phone_number&app_absent=0" target="_blank" class="animate__animated animate__fadeInUp">Connect Now</a>-->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <picture>
+          <source media="(max-width:480px)" srcset="<?php echo $base_url; ?>assets/images/slider/mblslid7.jpg">
+          <img alt="Wedding Decor" class="d-block img-responsive" src="<?php echo $base_url; ?>assets/images/slider/slider7.jpg">
+        </picture>
+        <div class="carousel-caption">
+          <h5 class="animate__animated animate__fadeInUp">Exquisite Decor<br>For Your Special Day</h5>
+          <p class="animate__animated animate__fadeInUp">Transform your venue into a magical wonderland</p>
+          <!--<a href="https://api.whatsapp.com/send/?phone=919100208880&text&type=phone_number&app_absent=0" target="_blank" class="animate__animated animate__fadeInUp">Connect Now</a>-->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <picture>
+          <source media="(max-width:480px)" srcset="<?php echo $base_url; ?>assets/images/slider/mblslid11.jpg">
+          <img alt="Wedding Photography" class="d-block img-responsive" src="<?php echo $base_url; ?>assets/images/slider/slider11.jpg">
+        </picture>
+        <div class="carousel-caption">
+          <h5 class="animate__animated animate__fadeInUp">Capture Every<br>Precious Moment</h5>
+          <p class="animate__animated animate__fadeInUp">Professional photography to preserve your memories forever</p>
+          <!--<a href="https://api.whatsapp.com/send/?phone=919100208880&text&type=phone_number&app_absent=0" target="_blank" class="animate__animated animate__fadeInUp">Connect Now</a>-->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <picture>
+          <source media="(max-width:480px)" srcset="<?php echo $base_url; ?>assets/images/slider/mblslid2.jpg">
+          <img alt="Wedding Venue" class="d-block img-responsive" src="<?php echo $base_url; ?>assets/images/slider/slid2.jpg">
+        </picture>
+        <div class="carousel-caption">
+          <h5 class="animate__animated animate__fadeInUp">Dream Venues<br>For Your Celebration</h5>
+          <p class="animate__animated animate__fadeInUp">Discover the perfect location for your wedding</p>
+          <!--<a href="https://api.whatsapp.com/send/?phone=919100208880&text&type=phone_number&app_absent=0" target="_blank" class="animate__animated animate__fadeInUp">Connect Now</a>-->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <picture>
+          <source media="(max-width:480px)" srcset="<?php echo $base_url; ?>assets/images/slider/mblslid3.jpg">
+          <img alt="Wedding Planning" class="d-block img-responsive" src="<?php echo $base_url; ?>assets/images/slider/slid3.jpg">
+        </picture>
+        <div class="carousel-caption">
+          <h5 class="animate__animated animate__fadeInUp">Stress-Free<br>Wedding Planning</h5>
+          <p class="animate__animated animate__fadeInUp">Let us handle the details while you enjoy the journey</p>
+          <!--<a href="https://api.whatsapp.com/send/?phone=919100208880&text&type=phone_number&app_absent=0" target="_blank" class="animate__animated animate__fadeInUp">Connect Now</a>-->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <picture>
+          <source media="(max-width:480px)" srcset="<?php echo $base_url; ?>assets/images/slider/mblslid12.jpg">
+          <img alt="Wedding Catering" class="d-block img-responsive" src="<?php echo $base_url; ?>assets/images/slider/slider12.jpg">
+        </picture>
+        <div class="carousel-caption">
+          <h5 class="animate__animated animate__fadeInUp">Exquisite Cuisine<br>For Your Guests</h5>
+          <p class="animate__animated animate__fadeInUp">Custom menus to delight every palate</p>
+          <!--<a href="https://api.whatsapp.com/send/?phone=919100208880&text&type=phone_number&app_absent=0" target="_blank" class="animate__animated animate__fadeInUp">Connect Now</a>-->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <picture>
+          <source media="(max-width:480px)" srcset="<?php echo $base_url; ?>assets/images/slider/mblslid9.jpg">
+          <img alt="Wedding Entertainment" class="d-block img-responsive" src="<?php echo $base_url; ?>assets/images/slider/slider9.jpg">
+        </picture>
+        <div class="carousel-caption">
+          <h5 class="animate__animated animate__fadeInUp">Unforgettable<br>Entertainment</h5>
+          <p class="animate__animated animate__fadeInUp">Make your wedding celebration truly memorable</p>
+          <!--<a href="https://api.whatsapp.com/send/?phone=919100208880&text&type=phone_number&app_absent=0" target="_blank" class="animate__animated animate__fadeInUp">Connect Now</a>-->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button">
+      <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button">
+      <span aria-hidden="true" class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!--====== MODERN BANNER ENDS ======-->
+
+  <!--====== ABOUT FIVE PART START ======-->
+
+  <section class="about-area about-five" id="about" itemscope itemtype="https://schema.org/AboutPage">
+  <div class="container">
+    <h1 style="visibility: hidden;font-size: 6px;">Event Planners In Hyderabad</h1>
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-12">
+        <div class="about-image-five wow fadeInLeft" data-wow-duration="1.5s">
+          <img src="<?php echo $base_url; ?>assets/images/about/about-img1.jpg" alt="about" class="img-fluid" />
+          <div class="floating-element floating-element-1"></div>
+          <div class="floating-element floating-element-2"></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+  <div class="about-content animate__animated animate__fadeInRight" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+    <h2 class="section-title mb-4" itemprop="headline">About Adyanta</h2>
+    <div class="about-text" itemprop="text">
+      <p class="mb-3">In the quest to find the perfect event planner, I was left feeling disheartened. Determined to create a magical experience, I took matters into my own hands, pouring my heart and soul into planning and designing every intricate detail.</p>
+      <p class="mb-3">From the fragrant blossoms to the enchanting lighting, the chairs carefully chosen, and the stage adorned with love, My vision became a reality.</p>
+      <p class="mb-3">The overwhelming praise and heartfelt gratitude from my loved ones sparked a flame within me and Adyanta Events emerged, born out of passion and a deep connection to art.</p>
+      <p class="mb-4">With boundless dedication, my team and I strive to curate unforgettable events that touch the very essence of your soul. Your dreams become our purpose as we breathe life into them, weaving moments that will forever be etched in your heart.</p>
+    </div>
+    <div class="signature animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-delay="400">Adyanta Events</div>
+  </div>
+</div>
+    </div>
+  </div>
+  
+  <!-- Animated decorative elements -->
+  <div style="position: absolute; top: 20%; left: 10%; width: 30px; height: 30px; background: rgba(241, 206, 86, 0.3); border-radius: 50%; animation: float 5s ease-in-out infinite;"></div>
+  <div style="position: absolute; bottom: 30%; right: 15%; width: 40px; height: 40px; background: rgba(108, 152, 72, 0.2); border-radius: 50%; animation: float 6s ease-in-out infinite 1s;"></div>
+</section>
+  
+<!-- Modern Process Section -->
+<!--<section id="process" class="py-6 py-lg-8 position-relative overflow-hidden">-->
+<!--  <div class="container position-relative z-2">-->
+    <!-- Section Header -->
+<!--    <div class="row justify-content-center mb-6 mb-lg-8">-->
+<!--      <div class="col-lg-8 text-center" data-aos="fade-up">-->
+<!--        <h2 class="display-4 fw-bold mb-3">Our Seamless Process</h2>-->
+<!--        <p class="lead text-muted">From vision to reality, we guide you through every step with precision and care</p>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <!-- Process Timeline -->
+<!--    <div class="process-timeline position-relative">-->
+      <!-- Process Line -->
+<!--      <div class="process-line position-absolute top-0 start-0 h-100 w-100">-->
+<!--        <div class="position-absolute top-0 start-0 h-100 w-100 bg-gradient"></div>-->
+<!--      </div>-->
+
+      <!-- Process Steps -->
+<!--      <div class="row g-4 g-lg-5 justify-content-center">-->
+        <!-- Step 1 -->
+<!--        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="100">-->
+<!--          <div class="process-card card h-100 border-0 shadow-sm hover-lift">-->
+<!--            <div class="card-body p-4 text-center">-->
+<!--              <div class="icon-wrapper mx-auto mb-4">-->
+<!--                <img src="<?php echo $base_url; ?>assets/images/process/process1.gif" alt="Brief" class="img-fluid process-icon">-->
+<!--                <div class="step-badge">1</div>-->
+<!--              </div>-->
+<!--              <h3 class="h4 mb-3">Brief</h3>-->
+<!--              <p class="mb-0 text-muted">We listen carefully to understand your vision and objectives</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+        <!-- Step 2 -->
+<!--        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="200">-->
+<!--          <div class="process-card card h-100 border-0 shadow-sm hover-lift">-->
+<!--            <div class="card-body p-4 text-center">-->
+<!--              <div class="icon-wrapper mx-auto mb-4">-->
+<!--                <img src="<?php echo $base_url; ?>assets/images/process/process2.gif" alt="Requirements" class="img-fluid process-icon">-->
+<!--                <div class="step-badge">2</div>-->
+<!--              </div>-->
+<!--              <h3 class="h4 mb-3">Requirements</h3>-->
+<!--              <p class="mb-0 text-muted">We identify all elements needed to bring your event to life</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+        <!-- Step 3 -->
+<!--        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="300">-->
+<!--          <div class="process-card card h-100 border-0 shadow-sm hover-lift">-->
+<!--            <div class="card-body p-4 text-center">-->
+<!--              <div class="icon-wrapper mx-auto mb-4">-->
+<!--                <img src="<?php echo $base_url; ?>assets/images/process/process3.gif" alt="Design" class="img-fluid process-icon">-->
+<!--                <div class="step-badge">3</div>-->
+<!--              </div>-->
+<!--              <h3 class="h4 mb-3">Design</h3>-->
+<!--              <p class="mb-0 text-muted">Our creative team crafts a customized event blueprint</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+        <!-- Step 4 -->
+<!--        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="400">-->
+<!--          <div class="process-card card h-100 border-0 shadow-sm hover-lift">-->
+<!--            <div class="card-body p-4 text-center">-->
+<!--              <div class="icon-wrapper mx-auto mb-4">-->
+<!--                <img src="<?php echo $base_url; ?>assets/images/process/process4.gif" alt="Execution" class="img-fluid process-icon">-->
+<!--                <div class="step-badge">4</div>-->
+<!--              </div>-->
+<!--              <h3 class="h4 mb-3">Execution</h3>-->
+<!--              <p class="mb-0 text-muted">Flawless implementation with attention to every detail</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+        <!-- Step 5 -->
+        <!--<div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="500">-->
+        <!--  <div class="process-card card h-100 border-0 shadow-sm hover-lift">-->
+        <!--    <div class="card-body p-4 text-center">-->
+        <!--      <div class="icon-wrapper mx-auto mb-4">-->
+        <!--        <img src="<?php echo $base_url; ?>assets/images/process/process5.gif" alt="Happy Clients" class="img-fluid process-icon">-->
+        <!--        <div class="step-badge">5</div>-->
+        <!--      </div>-->
+        <!--      <h3 class="h4 mb-3">Happy Clients</h3>-->
+        <!--      <p class="mb-0 text-muted">Your satisfaction is our ultimate success metric</p>-->
+        <!--    </div>-->
+        <!--  </div>-->
+        <!--</div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+  <!-- Decorative Elements -->
+<!--  <div class="position-absolute top-0 start-0 w-100 h-100 z-1">-->
+<!--    <div class="position-absolute top-0 end-0 w-50 h-50 bg-soft-primary rounded-circle opacity-10"></div>-->
+<!--    <div class="position-absolute bottom-0 start-0 w-50 h-50 bg-soft-warning rounded-circle opacity-10"></div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!-- Modern What We Offer Section -->
+<!--<section id="offer" class="position-relative py-7 py-lg-9 overflow-hidden">-->
+  <!-- Decorative Background Elements -->
+<!--  <div class="position-absolute top-0 start-0 w-100 h-100 z-n1">-->
+<!--    <div class="position-absolute top-0 start-0 w-100 h-100 bg-light"></div>-->
+<!--    <div class="position-absolute top-0 end-0 w-50 h-50 bg-soft-primary rounded-circle opacity-10"></div>-->
+<!--    <div class="position-absolute bottom-0 start-0 w-50 h-50 bg-soft-warning rounded-circle opacity-10"></div>-->
+<!--  </div>-->
+
+<!--  <div class="container position-relative z-1">-->
+    <!-- Animated Marquee Header -->
+<!--    <div class="marquee-wrapper mb-6 mb-lg-8" data-aos="fade-up">-->
+<!--      <div class="marquee-track">-->
+<!--        <div class="marquee-content">-->
+<!--          <span class="marquee-item">-->
+<!--            <img src="<?php echo $base_url; ?>assets/images/flower.png" alt="Flower" class="marquee-icon">-->
+<!--            <span class="marquee-text">What We Offer</span>-->
+<!--          </span>-->
+<!--          <span class="marquee-item">-->
+<!--            <img src="<?php echo $base_url; ?>assets/images/flower.png" alt="Flower" class="marquee-icon">-->
+<!--            <span class="marquee-text">What We Offer</span>-->
+<!--          </span>-->
+<!--          <span class="marquee-item">-->
+<!--            <img src="<?php echo $base_url; ?>assets/images/flower.png" alt="Flower" class="marquee-icon">-->
+<!--            <span class="marquee-text">What We Offer</span>-->
+<!--          </span>-->
+<!--          <span class="marquee-item">-->
+<!--            <img src="<?php echo $base_url; ?>assets/images/flower.png" alt="Flower" class="marquee-icon">-->
+<!--            <span class="marquee-text">What We Offer</span>-->
+<!--          </span>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <!-- Services Grid -->
+<!--    <div class="row g-4 g-lg-5">-->
+      <!-- Service 1 -->
+<!--      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">-->
+<!--        <div class="service-card card h-100 border-0 shadow-sm hover-lift">-->
+<!--          <div class="card-body p-4 p-lg-5 text-center">-->
+<!--            <div class="service-icon mx-auto mb-4">-->
+<!--              <img src="<?php echo $base_url; ?>assets/images/process/process2.gif" alt="Event Design" class="img-fluid">-->
+<!--            </div>-->
+<!--            <h3 class="h4 mb-3">Event Design</h3>-->
+<!--            <p class="mb-0">Transformative design concepts that bring your vision to life with creativity and precision.</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <!-- Service 2 -->
+<!--      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">-->
+<!--        <div class="service-card card h-100 border-0 shadow-sm hover-lift">-->
+<!--          <div class="card-body p-4 p-lg-5 text-center">-->
+<!--            <div class="service-icon mx-auto mb-4">-->
+<!--              <img src="<?php echo $base_url; ?>assets/images/process/process1.gif" alt="Planning" class="img-fluid">-->
+<!--            </div>-->
+<!--            <h3 class="h4 mb-3">Strategic Planning</h3>-->
+<!--            <p class="mb-0">Comprehensive event strategies tailored to your objectives and audience.</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <!-- Service 3 -->
+<!--      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">-->
+<!--        <div class="service-card card h-100 border-0 shadow-sm hover-lift">-->
+<!--          <div class="card-body p-4 p-lg-5 text-center">-->
+<!--            <div class="service-icon mx-auto mb-4">-->
+<!--              <img src="<?php echo $base_url; ?>assets/images/process/process4.gif" alt="Execution" class="img-fluid">-->
+<!--            </div>-->
+<!--            <h3 class="h4 mb-3">Flawless Execution</h3>-->
+<!--            <p class="mb-0">Meticulous attention to detail ensures seamless event implementation.</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <!-- Service 4 -->
+<!--      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">-->
+<!--        <div class="service-card card h-100 border-0 shadow-sm hover-lift">-->
+<!--          <div class="card-body p-4 p-lg-5 text-center">-->
+<!--            <div class="service-icon mx-auto mb-4">-->
+<!--              <img src="<?php echo $base_url; ?>assets/images/process/process5.gif" alt="Production" class="img-fluid">-->
+<!--            </div>-->
+<!--            <h3 class="h4 mb-3">Full Production</h3>-->
+<!--            <p class="mb-0">End-to-end event production with professional staging and technical support.</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <!-- Service 5 -->
+<!--      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">-->
+<!--        <div class="service-card card h-100 border-0 shadow-sm hover-lift">-->
+<!--          <div class="card-body p-4 p-lg-5 text-center">-->
+<!--            <div class="service-icon mx-auto mb-4">-->
+<!--              <img src="<?php echo $base_url; ?>assets/images/process/process2.gif" alt="Catering" class="img-fluid">-->
+<!--            </div>-->
+<!--            <h3 class="h4 mb-3">Gourmet Catering</h3>-->
+<!--            <p class="mb-0">Custom culinary experiences designed to impress your guests.</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <!-- Service 6 -->
+<!--      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">-->
+<!--        <div class="service-card card h-100 border-0 shadow-sm hover-lift">-->
+<!--          <div class="card-body p-4 p-lg-5 text-center">-->
+<!--            <div class="service-icon mx-auto mb-4">-->
+<!--              <img src="<?php echo $base_url; ?>assets/images/process/process3.gif" alt="Entertainment" class="img-fluid">-->
+<!--            </div>-->
+<!--            <h3 class="h4 mb-3">Entertainment</h3>-->
+<!--            <p class="mb-0">Curated performers and activities to elevate your event experience.</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!-- Modern Services Section -->
+<section id="range" class="position-relative py-7 py-lg-9 overflow-hidden" style="margin-top: 38px;  margin-bottom: 38px;" itemscope itemtype="https://schema.org/Service">
+  <!-- Decorative Background Elements -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 z-n1">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-light"></div>
+    <div class="position-absolute top-0 end-0 w-50 h-50 bg-soft-primary rounded-circle opacity-10"></div>
+    <div class="position-absolute bottom-0 start-0 w-50 h-50 bg-soft-warning rounded-circle opacity-10"></div>
+  </div>
+
+  <div class="container position-relative z-1">
+    <!-- Section Header -->
+    <div class="row justify-content-center mb-6 mb-lg-8">
+      <div class="col-lg-10 text-center" data-aos="fade-up">
+        <h2 class="display-4 fw-bold mb-3" itemprop="name">Our Event Services</h2>
+        <p class="lead text-muted">Creating unforgettable experiences for every occasion</p>
+      </div>
+    </div>
+
+    <!-- Services Grid - Now showing 3 columns per row -->
+    <div class="row g-4 g-lg-5">
+      <!-- Wedding Services -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card card h-100 border-0 shadow-sm hover-lift">
+          <div class="card-body p-4 text-center">
+            <div class="service-icon mx-auto mb-4">
+              <img src="<?php echo $base_url; ?>assets/images/events/event1.gif" alt="Weddings" class="img-fluid">
+            </div>
+            <h3 class="h4 mb-3">Weddings</h3>
+            <p class="mb-0 text-muted" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">Breathtaking celebrations tailored to your love story</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Corporate Events -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="service-card card h-100 border-0 shadow-sm hover-lift">
+          <div class="card-body p-4 text-center">
+            <div class="service-icon mx-auto mb-4">
+              <img src="<?php echo $base_url; ?>assets/images/events/event5.gif" alt="Corporate Events" class="img-fluid">
+            </div>
+            <h3 class="h4 mb-3" itemprop="name">Corporate Events</h3>
+            <p class="mb-0 text-muted">Professional gatherings that impress and inspire</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curated Events -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card card h-100 border-0 shadow-sm hover-lift">
+          <div class="card-body p-4 text-center">
+            <div class="service-icon mx-auto mb-4">
+              <img src="<?php echo $base_url; ?>assets/images/events/event9.gif" alt="Curated Events" class="img-fluid">
+            </div>
+            <h3 class="h4 mb-3">Curated Events</h3>
+            <p class="mb-0 text-muted">Unique experiences designed just for you</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Destination Weddings -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+        <div class="service-card card h-100 border-0 shadow-sm hover-lift">
+          <div class="card-body p-4 text-center">
+            <div class="service-icon mx-auto mb-4">
+              <img src="<?php echo $base_url; ?>assets/images/events/event2.gif" alt="Destination Weddings" class="img-fluid">
+            </div>
+            <h3 class="h4 mb-3">Destination Weddings</h3>
+            <p class="mb-0 text-muted">Dream celebrations in exotic locations</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Birthdays -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card card h-100 border-0 shadow-sm hover-lift">
+          <div class="card-body p-4 text-center">
+            <div class="service-icon mx-auto mb-4">
+              <img src="<?php echo $base_url; ?>assets/images/events/event6.gif" alt="Birthdays" class="img-fluid">
+            </div>
+            <h3 class="h4 mb-3">Birthdays</h3>
+            <p class="mb-0 text-muted">Memorable celebrations for all ages</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anniversaries -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
+        <div class="service-card card h-100 border-0 shadow-sm hover-lift">
+          <div class="card-body p-4 text-center">
+            <div class="service-icon mx-auto mb-4">
+              <img src="<?php echo $base_url; ?>assets/images/events/event10.gif" alt="Anniversaries" class="img-fluid">
+            </div>
+            <h3 class="h4 mb-3">Anniversaries</h3>
+            <p class="mb-0 text-muted">Celebrating milestones in style</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engagement Parties -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-card card h-100 border-0 shadow-sm hover-lift">
+          <div class="card-body p-4 text-center">
+            <div class="service-icon mx-auto mb-4">
+              <img src="<?php echo $base_url; ?>assets/images/events/event3.gif" alt="Engagement Parties" class="img-fluid">
+            </div>
+            <h3 class="h4 mb-3">Engagement Parties</h3>
+            <p class="mb-0 text-muted">The perfect start to your journey</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Baby Showers -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="450">
+        <div class="service-card card h-100 border-0 shadow-sm hover-lift">
+          <div class="card-body p-4 text-center">
+            <div class="service-icon mx-auto mb-4">
+              <img src="<?php echo $base_url; ?>assets/images/events/event7.gif" alt="Baby Showers" class="img-fluid">
+            </div>
+            <h3 class="h4 mb-3">Baby Showers</h3>
+            <p class="mb-0 text-muted">Joyful celebrations for new beginnings</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photoshoot Styling -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-card card h-100 border-0 shadow-sm hover-lift">
+          <div class="card-body p-4 text-center">
+            <div class="service-icon mx-auto mb-4">
+              <img src="<?php echo $base_url; ?>assets/images/events/event11.gif" alt="Photoshoot Styling" class="img-fluid">
+            </div>
+            <h3 class="h4 mb-3">Photoshoot Styling</h3>
+            <p class="mb-0 text-muted">Picture-perfect moments captured</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bridal Showers -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="550">
+        <div class="service-card card h-100 border-0 shadow-sm hover-lift">
+          <div class="card-body p-4 text-center">
+            <div class="service-icon mx-auto mb-4">
+              <img src="<?php echo $base_url; ?>assets/images/events/event4.gif" alt="Bridal Showers" class="img-fluid">
+            </div>
+            <h3 class="h4 mb-3">Bridal Showers</h3>
+            <p class="mb-0 text-muted">Elegant pre-wedding celebrations</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cradle Ceremonies -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-card card h-100 border-0 shadow-sm hover-lift">
+          <div class="card-body p-4 text-center">
+            <div class="service-icon mx-auto mb-4">
+              <img src="<?php echo $base_url; ?>assets/images/events/event8.gif" alt="Cradle Ceremonies" class="img-fluid">
+            </div>
+            <h3 class="h4 mb-3">Cradle Ceremonies</h3>
+            <p class="mb-0 text-muted">Traditional celebrations for newborns</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Invites -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="650">
+        <div class="service-card card h-100 border-0 shadow-sm hover-lift">
+          <div class="card-body p-4 text-center">
+            <div class="service-icon mx-auto mb-4">
+              <img src="<?php echo $base_url; ?>assets/images/events/event12.gif" alt="Invites" class="img-fluid">
+            </div>
+            <h3 class="h4 mb-3">Custom Invites</h3>
+            <p class="mb-0 text-muted">Beautiful first impressions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+
+<div id="contact">
+  <section class="celebrat-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <img src="<?php echo $base_url; ?>assets/images/celebrate.png" class="img-responsive">
+        </div>
+        <div class="col-md-5">
+          <h2 class="head-title text-center wow zoomIn" data-wow-duration="2s">Get In Touch</h2>
+          <div class="contact" id="contact-form">
+          <form method="post" role="form" class="php-email-form mt-4" autocomplete="off" id="business-enquiry-form">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" name="enquirer_name" id="enquirer_name" placeholder="Your Name*" required data-msg="Please enter your name">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control number" name="enquirer_mobile" id="enquirer_mobile" placeholder="Your Mobile*" required data-msg="Please enter at least 10 digits" maxlength="10" minlength="10">
+              </div>
+              <div class="col-md-12">
+                <input type="email" class="form-control" name="enquirer_email" id="enquirer_email" placeholder="Your Email*" required data-msg="Please enter a valid email">
+              </div>
+              <div class="col-md-12">
+                <textarea class="form-control" name="enquirer_message" id="enquirer_message" rows="4" placeholder="Your Message" required data-msg="Please write your message here"></textarea>
+              </div>
+              <div class="col-md-12">
+                <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+              </div>
+              <div class="col-md-12" style="text-align: center;">
+              <button type="submit" class="form-btn enquirer_button octf-btn" id="submit">Submit</button>
+             </div>
+            </div>
+
+          </form>
+          </div>
+          <!-- <a href="https://api.whatsapp.com/send/?phone=919100208880&text&type=phone_number&app_absent=0" target="_blank" class="cnt-btn">Connect Now</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+  
+      <section class="instagram-feed" style="background: #F0F5ED; padding: 80px 0; overflow: hidden; position: relative;">
+  <!-- Decorative elements -->
+  <div class="instagram-bg-elements">
+   
+  </div>
+  
+  <div class="container" style="position: relative; z-index: 1;">
+    <!-- Section Title with Animation -->
+    <div class="section-header text-center mb-5 wow fadeInDown" data-wow-delay="0.1s" style="animation-duration: 1s;">
+      <h2 class="section-title" style="font-size: 3.5rem; font-family: 'Noto Serif Display', serif; color: #8e741a; position: relative; display: inline-block;">
+        <span style="position: relative; z-index: 1;">Instagram</span>
+        <span class="title-bg" style="position: absolute; bottom: 5px; left: 0; width: 100%; height: 15px; background: rgba(241, 206, 86, 0.3); z-index: 0;"></span>
+      </h2>
+      <p class="section-subtitle mt-3" style="color: #6c9848; font-weight: 500; letter-spacing: 1px;">Follow us @adyanta_events</p>
+    </div>
+
+    <!-- Instagram Posts Grid -->
+    <div class="row g-4 instagram-grid">
+
+      
+      <!-- Post 1 -->
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.2s" style="animation-duration: 1s;">
+        <div class="instagram-post" style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.4s ease; height: 100%;">
+          <div class="post-overlay" style="position: absolute; top: 0; left: 0;  background: linear-gradient(to bottom, rgba(108,152,72,0.3), rgba(241,206,86,0.3)); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; z-index: 2;">
+            <i class="fab fa-instagram" style="color: white; font-size: 2rem; transform: scale(1.5); transition: all 0.3s ease;"></i>
+          </div>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DBBm-ywP8Tl/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DBBm-ywP8Tl/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DBBm-ywP8Tl/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Adyanta Events by Inaara (@adyanta_events)</a></p></div></blockquote>
+        </div>
+      </div>
+      
+      <!-- Post 2 -->
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s" style="animation-duration: 1s;">
+        <div class="instagram-post" style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.4s ease; height: 100%;">
+          <div class="post-overlay" style="position: absolute; top: 0; left: 0;  background: linear-gradient(to bottom, rgba(108,152,72,0.3), rgba(241,206,86,0.3)); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; z-index: 2;">
+            <i class="fab fa-instagram" style="color: white; font-size: 2rem; transform: scale(1.5); transition: all 0.3s ease;"></i>
+          </div>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DA50M5hvK7V/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px); height: 100%;">
+            <div style="padding:16px;"> 
+              <a href="https://www.instagram.com/reel/DA50M5hvK7V/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                <!-- Instagram embed content -->
+              </a>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+      
+      <!-- Post 3 -->
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.4s" style="animation-duration: 1s;">
+        <div class="instagram-post" style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.4s ease; height: 100%;">
+          <div class="post-overlay" style="position: absolute; top: 0; left: 0;  background: linear-gradient(to bottom, rgba(108,152,72,0.3), rgba(241,206,86,0.3)); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; z-index: 2;">
+            <i class="fab fa-instagram" style="color: white; font-size: 2rem; transform: scale(1.5); transition: all 0.3s ease;"></i>
+          </div>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DAlUVb9vkKh/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px); height: 100%;">
+            <div style="padding:16px;"> 
+              <a href="https://www.instagram.com/reel/DAlUVb9vkKh/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                <!-- Instagram embed content -->
+              </a>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+      
+      <!-- Post 4 -->
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.5s" style="animation-duration: 1s;">
+        <div class="instagram-post" style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.4s ease; height: 100%;">
+          <div class="post-overlay" style="position: absolute; top: 0; left: 0;  background: linear-gradient(to bottom, rgba(108,152,72,0.3), rgba(241,206,86,0.3)); opacity: 0; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; z-index: 2;">
+            <i class="fab fa-instagram" style="color: white; font-size: 2rem; transform: scale(1.5); transition: all 0.3s ease;"></i>
+          </div>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C_QP_m7vDqC/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px); height: 100%;">
+            <div style="padding:16px;"> 
+              <a href="https://www.instagram.com/reel/C_QP_m7vDqC/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                <!-- Instagram embed content -->
+              </a>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-5 wow fadeIn" data-wow-delay="0.6s" style="animation-duration: 1s;">
+      <a href="https://www.instagram.com/adyanta_events/" target="_blank" class="btn-instagram" style="display: inline-block; padding: 12px 30px; background: linear-gradient(to right, #f1ce56, #6c9848); color: white; border-radius: 50px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; text-decoration: none; box-shadow: 0 5px 15px rgba(108, 152, 72, 0.3); transition: all 0.3s ease; position: relative; overflow: hidden;">
+        <span style="position: relative; z-index: 2;">View More on Instagram</span>
+        <span class="btn-bg-hover" style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(to right, #6c9848, #f1ce56); transition: all 0.4s ease; z-index: 1;"></span>
+      </a>
+    </div>
+  </div>
+<script async src="https://www.instagram.com/embed.js"></script>
+ 
+</section>
+
+  <!--====== FOOTER PART START ======-->
+<footer class="footer-area footer-eleven" id="contact" style="background: #FDF9EA;">
+  <!-- Start Footer Top -->
+  <div class="footer-top">
+    <div class="container">
+      <div class="inner-content">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <!-- Contact Widget -->
+            <div class="footer-widget contact-widget animate__animated animate__fadeInUp">
+              <h5 class="widget-title">Get In Touch</h5>
+              <ul class="footer-location">
+               <li><span><i class="lni lni-phone"></i></span> <a href="tel:9100208880">+91 910 0208 880</a></li>
+                  <li><span><i class="lni lni-envelope"></i></span> <a href="mailto:adyantaevents@gmail.com">adyantaevents@gmail.com</a> </li>
+                  <li><span><i class="lni lni-map-marker"></i></span> 328, Ravindra Society, Road No. 07, Kakatiya Hills, Madhapur, Hyderabad, Telangana, India.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-12 mb-col">
+            <!-- Quick Links Widget -->
+            <div class="footer-widget links-widget animate__animated animate__fadeInUp animate__delay-1s">
+              <h5 class="widget-title">Quick Links</h5>
+              <ul class="f-link">
+                <li><a href="#home" class="footer-link">Home</a></li>
+                <li><a href="#about" class="footer-link">About Us</a></li>
+                <li><a href="#process" class="footer-link">Our Process</a></li>
+                <li><a href="#offer" class="footer-link">What we offer</a></li>
+                <li><a href="#range" class="footer-link">Our Services</a></li>
+                 <li><a href="#contact" class="footer-link">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-12">
+            <!-- Brand Widget -->
+            <div class="footer-widget brand-widget animate__animated animate__fadeInUp animate__delay-2s">
+              <div class="logo text-center">
+                <a href="index.html" class="logo-link">
+                  <img src="<?php echo $base_url; ?>assets/images/adyanta.png" alt="Adyanta Events Logo" style="width: 110px;" class="logo-img" />
+                </a>
+              </div>
+              
+              <div class="text-center">
+                <ul class="footer-icons">
+                  <li class="social-icon">
+                    <a href="https://www.facebook.com/Adyanta-Events-By-Inaara-112548038429805" target="_blank" class="social-link">
+                      <i class="lni lni-facebook-filled"></i>
+                      <span class="social-tooltip">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="https://www.instagram.com/adyanta_events/" target="_blank" class="social-link">
+                      <i class="lni lni-instagram"></i>
+                      <span class="social-tooltip">Instagram</span>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="https://wa.me/919100208880" target="_blank" class="social-link">
+                      <i class="lni lni-whatsapp"></i>
+                      <span class="social-tooltip">WhatsApp</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="copyright-text text-center mt-3">
+                <p>&copy; <span id="year"></span> Adyanta Events. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Back to Top Button -->
+  <div class="scroll-top">
+    <i class="lni lni-chevron-up"></i>
+  </div>
+</footer>
+
+
+  <a href="#" class="scroll-top btn-hover">
+    <i class="lni lni-chevron-up"></i>
+  </a>
+
+  <!--====== js ======-->
+  
+  <!-- <script src="assets/js/glightbox.min.js"></script> -->
+  <script src="<?php echo $base_url; ?>assets/js/main.js"></script>
+  <script src="<?php echo $base_url; ?>assets/js/tiny-slider.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script> 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
+  </script>
+  <script src="<?php echo $base_url; ?>assets/js/bootstrap.bundle.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<script>
+  // Initialize animations
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
+  });
+
+  // Add hover class on touch devices
+  document.addEventListener('touchstart', function() {}, true);
+</script>
+
+
+
+ <script>
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.getElementById('sidebar');
+    const sidebarLogo = document.getElementById('sidebarLogo');
+    const logoImg = document.querySelector('.sidebar-logo-img');
+    
+    // Scroll event listener
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        sidebar.classList.add('scrolled');
+        logoImg.style.maxHeight = '50px'; // Smaller size when scrolled
+      } else {
+        sidebar.classList.remove('scrolled');
+        logoImg.style.maxHeight = '60px'; // Original size
+      }
+    });
+
+    // Smooth scroll for menu items
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        if (this.getAttribute('href').startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          window.scrollTo({
+            top: target.offsetTop,
+            behavior: 'smooth'
+          });
+          closeSidebar();
+        }
+      });
+    });
+
+    // Rest of your existing sidebar toggle functionality
+    function closeSidebar() {
+      sidebar.style.transform = 'translateX(-100%)';
+      document.body.style.overflow = '';
+    }
+    
+    document.getElementById('sidebarClose').addEventListener('click', closeSidebar);
+  });
+  
+  
+   // Add hover effect to Instagram posts
+    document.querySelectorAll('.instagram-post').forEach(post => {
+      post.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px)';
+        this.querySelector('.post-overlay').style.opacity = '1';
+      });
+      
+      post.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+        this.querySelector('.post-overlay').style.opacity = '0';
+      });
+    });
+
+// Set current year in copyright
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Scroll to top button
+window.addEventListener('scroll', function() {
+  var scrollTop = document.querySelector('.scroll-top');
+  if (window.pageYOffset > 300) {
+    scrollTop.classList.add('active');
+  } else {
+    scrollTop.classList.remove('active');
+  }
+});
+
+document.querySelector('.scroll-top').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// Add animation on scroll
+function animateOnScroll() {
+  const elements = document.querySelectorAll('.animate__animated');
+  
+  elements.forEach(element => {
+    const elementPosition = element.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+    
+    if (elementPosition < screenPosition) {
+      const animationClass = element.classList[1];
+      element.classList.add(animationClass);
+    }
+  });
+}
+
+window.addEventListener('scroll', animateOnScroll);
+window.addEventListener('load', animateOnScroll);
+
+  // Add smooth scrolling to all links
+document.querySelectorAll('a.page-scroll').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 80,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// Navbar highlight effect
+const navItems = document.querySelectorAll('.nav-item');
+const navHighlight = document.querySelector('.nav-highlight');
+
+navItems.forEach(item => {
+  item.addEventListener('mouseenter', function() {
+    const { left, width } = this.getBoundingClientRect();
+    navHighlight.style.width = `${width}px`;
+    navHighlight.style.left = `${left}px`;
+  });
+});
+
+// Magnetic effect for toggle button
+const magneticBtn = document.querySelector('.navbar-toggler.magnetic');
+if (magneticBtn) {
+  magneticBtn.addEventListener('mousemove', (e) => {
+    const rect = magneticBtn.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const angleX = (y - centerY) / 10;
+    const angleY = (centerX - x) / 10;
+    
+    magneticBtn.style.transform = `perspective(500px) rotateX(${angleX}deg) rotateY(${angleY}deg)`;
+  });
+  
+  magneticBtn.addEventListener('mouseleave', () => {
+    magneticBtn.style.transform = 'perspective(500px) rotateX(0) rotateY(0)';
+  });
+}
+
+// Sticky navbar
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar-area.navbar-nine');
+  if (window.scrollY > 50) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+});
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let navbarTogglerNine = document.querySelector(".navbar-nine .navbar-toggler");
+if (navbarTogglerNine) {
+  navbarTogglerNine.addEventListener("click", function () {
+    navbarTogglerNine.classList.toggle("active");
+  });
+}
+
+let sidebarLeft = document.querySelector(".sidebar-left");
+let overlayLeft = document.querySelector(".overlay-left");
+let sidebarClose = document.querySelector(".sidebar-close .close");
+
+if (overlayLeft && sidebarLeft) {
+  overlayLeft.addEventListener("click", function () {
+    sidebarLeft.classList.toggle("open");
+    overlayLeft.classList.toggle("open");
+  });
+}
+
+if (sidebarClose && sidebarLeft && overlayLeft) {
+  sidebarClose.addEventListener("click", function () {
+    sidebarLeft.classList.remove("open");
+    overlayLeft.classList.remove("open");
+  });
+}
+
+let sideMenuLeftNine = document.querySelector(".navbar-nine .menu-bar");
+if (sideMenuLeftNine && sidebarLeft && overlayLeft) {
+  sideMenuLeftNine.addEventListener("click", function () {
+    sidebarLeft.classList.add("open");
+    overlayLeft.classList.add("open");
+  });
+}
+  });
+</script>
+  <script>
+    
+$(document).ready(function() {
+    $("#news-slider").owlCarousel({
+        items : 4,
+        itemsDesktop:[1199,4],
+        itemsDesktopSmall:[980,2],
+        itemsMobile : [600,1],
+        navigation:true,
+        navigationText:["",""],
+        pagination:true,
+        autoPlay:true
+    });
+});
+  </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script type="text/javascript" src="<?php echo $base_url; ?>assets/vendor/jquery.validation/jquery.validate.min.js"></script>
+<script type="text/javascript" src="<?php echo $base_url; ?>assets/vendor/jquery.validation/additional-methods.js"></script>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=686d071293a35e001a492f23&product=sticky-share-buttons' async='async'></script>
+        <script>
+            $(".number").keypress(function(e) {
+                // alert("hi");
+                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                    //display error message
+                    return false;
+                }
+            });
+
+            /* Business Enquiry Form validation */
+            $(".enquirer_button").click(function() {
+                $("#business-enquiry-form").find('.sent-message').slideUp();
+                $("#business-enquiry-form").find('.error-message').slideUp();
+            });
+
+            $("#business-enquiry-form").validate({
+                submitHandler: function(form) {
+                    $(form).find('.sent-message').slideUp();
+                    $(form).find('.error-message').slideUp();
+                    $(form).find('.loading').slideDown();
+                    $.ajax({
+                        type: "POST",
+                        url: "business_enquiry.php",
+                        data: $(form).serialize(),
+                        timeout: 40000,
+                        beforeSend: function() {
+                            $(".enquirer_button").prop('disabled', true).css('cursor', 'not-allowed'); // disable button
+                        },
+                    }).done(function(msg) {
+                        $(".enquirer_button").prop('disabled', false).css('cursor', 'pointer'); // disable button
+                        if (msg == 'Success') {
+                            $(form).find('.loading').slideUp();
+                            $(form).find('.sent-message').slideDown();
+                            window.setTimeout(function() {
+                        location.reload()
+                    }, 3000)
+                        } else {
+                            $(form).find('.loading').slideUp();
+                            if (!msg) {
+                                msg = 'Form submission failed and no error message returned<br>';
+                            }
+                            $(form).find('.error-message').slideDown().html(msg);
+                        }
+                    }).fail(function(data) {
+                        var error_msg = "Form submission failed!<br>";
+                        if (data.statusText || data.status) {
+                            error_msg += 'Status:';
+                            if (data.statusText) {
+                                error_msg += ' ' + data.statusText;
+                            }
+                            if (data.status) {
+                                error_msg += ' ' + data.status;
+                            }
+                            error_msg += '<br>';
+                        }
+                        if (data.responseText) {
+                            error_msg += data.responseText;
+                        }
+                        $(form).find('.loading').slideUp();
+                        $(form).find('.error-message').slideDown().html(error_msg);
+                    });
+                    return false;
+                },
+                errorPlacement: function(error, element) {
+                    if (element.attr("name") == "enquirer_industry[]") {
+                        error.appendTo("#errorBox");
+                    } else {
+                        error.insertAfter(element);
+                    }
+                }
+            });
+        </script>
+        <script>
+          $(".navbar-nav>li>a").on("click", function(){
+            $(".navbar-collapse").collapse("hide");
+           });
+        </script>
+        <script>
+            new WOW().init();
+        </script>
+        <script type="application/ld+json">
+        {
+        @context: "https://schema.org/",
+        @type: "WebSite",
+        name: "Adyanta Events",
+        url: "<?php echo $base_url; ?>",
+        potentialAction: {
+        @type: "SearchAction",
+        target: "<?php echo $base_url; ?>{search_term_string}",
+        query-input: "required name=search_term_string"
+        }
+        }
+        </script>
+</body>
+
+</html>

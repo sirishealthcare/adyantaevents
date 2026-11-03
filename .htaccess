@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Force HTTPS only for www
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^www\.adyantaevents\.com$ [NC]
+RewriteRule ^(.*)$ https://www.adyantaevents.com/$1 [L,R=301]
+</IfModule>

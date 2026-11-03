@@ -1,0 +1,87 @@
+<?php
+class InstagramFeed {
+    private $appId;
+    private $appSecret;
+    private $instagramId;
+    private $accessToken;
+    private $apiUrl = 'https://graph.facebook.com/v19.0/';
+
+    public function __construct($appId, $appSecret, $instagramId, $accessToken) {
+        $this->appId = $appId;
+        $this->appSecret = $appSecret;
+        $this->instagramId = $instagramId;
+        $this->accessToken = $accessToken;
+    }
+
+    public function getLiveMedia() {
+        try {
+            // First check for live media
+            $liveMedia = $this->makeApiRequest("{$this->instagramId}/live_media", [
+                'fields' => 'id,media_type,media_url,permalink,timestamp,caption'
+            ]);
+
+            // If no live media, get recent media instead
+            if (empty($liveMedia['data'])) {
+                $recentMedia = $this->makeApiRequest("{$this->instagramId}/media", [
+                    'fields' => 'id,media_type,media_url,permalink,timestamp,caption',
+                    'limit' => 12
+                ]);
+                return $recentMedia['data'] ?? [];
+            }
+
+            return $liveMedia['data'];
+        } catch (Exception $e) {
+            error_log("Instagram API Error: " . $e->getMessage());
+            return [];
+        }
+    }
+
+    private function makeApiRequest($endpoint, $params = []) {
+        $url = $this->apiUrl . $endpoint;
+        $params['access_token'] = $this->accessToken;
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url . '?' . http_build_query($params));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+
+        $response = curl_exec($ch);
+        $error = curl_error($ch);
+        curl_close($ch);
+
+        if ($error) {
+            throw new Exception("cURL Error: " . $error);
+        }
+
+        $data = json_decode($response, true);
+
+        if (isset($data['error'])) {
+            throw new Exception("API Error: {$data['error']['message']}");
+        }
+
+        return $data;
+    }
+
+    // Helper method to refresh access token if needed
+    public function refreshAccessToken($currentToken) {
+        $url = "https://graph.facebook.com/v19.0/oauth/access_token?" .
+               "grant_type=fb_exchange_token&" .
+               "client_id={$this->appId}&" .
+               "client_secret={$this->appSecret}&" .
+               "fb_exchange_token={$currentToken}";
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($ch);
+        curl_close($ch);
+
+        $data = json_decode($response, true);
+
+        if (isset($data['access_token'])) {
+            return $data['access_token'];
+        }
+
+        return null;
+    }
+}
