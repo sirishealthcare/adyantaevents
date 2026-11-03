@@ -426,6 +426,63 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 grid-template-columns: repeat(3, 1fr) !important;
             }
         }
+
+        #gallery .instagram-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            grid-auto-rows: 1fr;
+            align-items: stretch;
+            gap: 1.5rem;
+        }
+
+        #gallery .instagram-card {
+            display: flex;
+            min-width: 0;
+            width: 100%;
+            overflow: hidden;
+            background: #fff;
+            border: 1px solid rgba(142, 116, 26, 0.16);
+            border-radius: 1.25rem;
+            box-shadow: 0 10px 30px rgba(31, 41, 55, 0.08);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        #gallery .instagram-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 36px rgba(31, 41, 55, 0.14);
+        }
+
+        #gallery .instagram-card .instagram-media {
+            box-sizing: border-box;
+            flex: 1 1 auto;
+            min-width: 0 !important;
+            max-width: 100% !important;
+            width: 100% !important;
+            margin: 0 !important;
+            border: 0 !important;
+            border-radius: inherit !important;
+            box-shadow: none !important;
+        }
+
+        #gallery .instagram-card iframe {
+            box-sizing: border-box;
+            display: block;
+            min-width: 0 !important;
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+
+        @media (min-width: 768px) {
+            #gallery .instagram-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 1024px) {
+            #gallery .instagram-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
     </style>
     
     <!-- Enhanced Schema.org Structured Data -->
@@ -941,7 +998,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="relative group">
                     <div class="absolute -inset-4 bg-gradient-to-r from-accent to-secondary rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur-xl" aria-hidden="true"></div>
                     <div class="relative overflow-hidden rounded-3xl shadow-2xl">
-                        <img src="assets/images/about/about-img1.jpg" alt="Adyanta Events - Professional Event Planning Team in Hyderabad" title="About Adyanta Events - Award Winning Event Planners" class="w-full h-auto transform group-hover:scale-110 transition-transform duration-700" loading="lazy" width="800" height="600">
+                        <img src="assets/images/about/monika-reddy-aadyantha-events.jpeg" alt="Adyanta Events - Professional Event Planning Team in Hyderabad" title="About Adyanta Events - Award Winning Event Planners" class="w-full h-auto transform group-hover:scale-110 transition-transform duration-700" loading="lazy" width="800" height="600">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <!-- Floating Elements -->
@@ -1146,12 +1203,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- Instagram Posts Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="instagram-grid">
                 <!-- Post 1 -->
-                <div class="rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C_QP_m7vDqC/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <div class="instagram-card">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DehCB8FhQLE/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                         <div style="padding:16px;">
-                            <a href="https://www.instagram.com/reel/C_QP_m7vDqC/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                            <a href="https://www.instagram.com/reel/DehCB8FhQLE/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
                                 <!-- Instagram embed content -->
                             </a>
                         </div>
@@ -1159,7 +1216,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
 
                 <!-- Post 2 -->
-                <div class="rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="instagram-card">
                     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHQ1bX9vJpE/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                         <div style="padding:16px;">
                             <a href="https://www.instagram.com/reel/DHQ1bX9vJpE/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
@@ -1170,7 +1227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
 
                 <!-- Post 3 -->
-                <div class="rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="instagram-card">
                     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C_QP_m7vDqC/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                         <div style="padding:16px;">
                             <a href="https://www.instagram.com/reel/C_QP_m7vDqC/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
@@ -1181,7 +1238,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
 
                 <!-- Post 4 -->
-                <div class="rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="instagram-card">
                     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C2ms6XihmmK/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                         <div style="padding:16px;">
                             <a href="https://www.instagram.com/reel/C2ms6XihmmK/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
